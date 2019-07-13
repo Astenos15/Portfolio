@@ -6,9 +6,9 @@ body text NOT NULL
 
 
 
-<h1>Roasted Pork</h1>
+<h4>Roasted Pork</h4>
 <hr>
-<h3>Ingredients</h3>
+<h5>Ingredients</h5>
 -1/4 cup extra-virgin olive oil <br>
 -plus more for drizzling 4 thyme <br>
 -minced garlic <br>
@@ -19,14 +19,14 @@ body text NOT NULL
 -freshly ground black pepper <br>
 -White Bean Puree <br>
 <hr>
-<h2>How To Make It</h2>
-<h3>Step 1</h3>
+<h5>How To Make It</h5>
+<h5>Step 1</h5>
 In a large, shallow dish, combine the 1/4 cup of olive oil with the thyme, minced garlic, rosemary and cumin. Add the lamb chops and turn to coat with the marinade. Refrigerate overnight.
 
-<h3>Step 2</h3>
+<h5>Step 2</h5>
 Preheat the oven to 350°. Set the halved heads of garlic cut side up on a large sheet of foil and drizzle with oil. Wrap the garlic in the foil and roast for 1 hour, until tender.
 
-<h3>Step3</h3>
+<h5>Step3</h5>
 Light a grill. Remove the chops from the marinade; discard the thyme and scrape off the garlic. Season the chops with salt and pepper and grill over moderate heat until lightly charred and medium-rare, 5 minutes per side. Serve the chops with the roasted garlic and White Bean Puree.
 
 

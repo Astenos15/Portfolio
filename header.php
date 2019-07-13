@@ -13,11 +13,11 @@
 <style>
 .parallax {
   /* The image used */
-  background-image: url(img/caro3.jpg);
+  /*background-image: url(img/caro3.jpg);*/
+  background: linear-gradient(to left,rgba(135, 0, 0, 0.5),rgba(25, 10, 5, 0.5)),url(img/caro3.jpg); 
   /* Set a specific height */
-  min-height: 600px; 
+  min-height: 580px; 
 
-	Fian Steaks Treat
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -27,9 +27,9 @@
 }
 .parallax2 {
   /* The image used */
-  background-image: url(img/caro5.jpg);
+  background: linear-gradient(to left,rgba(135, 0, 0, 0.5),rgba(25, 10, 5, 0.5)) ,url(img/caro5.jpg);
   /* Set a specific height */
-  min-height: 700px; 
+  min-height: 400px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

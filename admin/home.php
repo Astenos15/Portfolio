@@ -12,38 +12,6 @@ if (isset($_GET['logout'])) {
 }
 ?>
 
-<?php
-  // Create database connection
-  $db = mysqli_connect("localhost", "root", "", "multi_login");
-
-  // Initialize message variable
-  $msg = "";
-
-  // If upload button is clicked ...
-  if (isset($_POST['upload'])) {
-  	// Get image name
-  	$image = $_FILES['image']['name'];
-  	// Get text
-  	$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
-
-  	// image file directory
-  	$target = "images/".basename($image);
-
-  	$sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
-  	// execute query
-  	mysqli_query($db, $sql);
-
-  	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-  		// $msg = "Image uploaded successfully";
-      header("location: ../index.php");
-  	}else{
-  		$msg = "Failed to upload image";
-  	}
-  }
-  $result = mysqli_query($db, "SELECT * FROM images");
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,9 +51,9 @@ if (isset($_GET['logout'])) {
 					<small>
 						<i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
 						<br>
-						<a href="home.php?logout='1'" style="color: red;">logout</a>
-                       &nbsp; <a href="create_user.php"> + add user</a>
-            <button><a href="../index.php">Home</button></a>
+						<a href="home.php?logout='1'" style="color: red !important;">Logout</a>
+                       &nbsp; <a href="create_user.php" style="color: red !important;"> + add user</a>
+            <button><a href="../index.php" style="color: red !important;">Home</button></a>
 					</small>
 
 				<?php endif ?>
@@ -128,7 +96,6 @@ if (isset($_GET['logout'])) {
   	</div>
   </form>
 </div>
-
 
 
 

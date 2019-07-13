@@ -1,19 +1,25 @@
-<footer class="footer">
+
+	<footer id="footer">
 	<ul class="nav justify-content-center">
+	<ul class="nav">
+		<a href="landing.php"><img id="footlogo" src="img/Logo.png" height="150px" width="150px"></a>
+		</ul>
 	  <li id="media" class="nav-item">
-	    <a href=""><i class="fab fa-instagram">Instagram</i></a>
+	    <a href=""><i id="foot" class="fab fa-instagram fa-2x"></i></a>
 	  </li>
 	  <li id="media" class="nav-item">
-	    <a href=""><i class="fab fa-facebook-square">Facebook</i></a>
+	    <a href=""><i id="foot" class="fab fa-facebook-square fa-2x"></i></a>
 	  </li>
 	  <li id="media" class="nav-item">
-	   <a href=""> <i class="fab fa-twitter">Twitter</i></a>
+	   <a href=""> <i id="foot" class="fab fa-twitter fa-2x"></i></a>
 	  </li>
 	  <li id="logo" class="nav-item">
-	    <a class="nav-link" href="#">Copyright Fian Steaks Treat</a>
+	    <a><h5 id="a2">Copyright Fian Steaks Treat</h5></a>
 	  </li>
 	</ul>
-</footer>
+	</footer>
+
+
 
 
 

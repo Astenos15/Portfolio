@@ -1,6 +1,7 @@
 * { margin: 0px; padding: 0px; }
 body {
-	 background: url('img/background.jpg') no-repeat center center fixed;
+	 background: linear-gradient(to left,rgba(135, 0, 0, 0.5),rgba(25, 10, 5, 0.5)),url(img/background.jpg)
+	 no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -8,11 +9,29 @@ body {
 	font-size: 120%;
 	/*background: #F8F8FF;*/
 }
+#navi {
+	background-color:#320911;
+	height: 100px;
+}
+a  {
+	color: white !important;
+	font-family: 'Crimson Text', serif;
+}
+#a3  {
+	color: #320911 !important;
+	font-family: 'Crimson Text', serif;
+}
+a:hover{
+	color: #DAA520 !important;
+}
+h2{
+	font-family: 'Crimson Text', serif;
+}
 .navi {
 	width: 100%;
 	/*margin: 50px auto 0px;*/ 
 	color: white;
-	background: #5E1717;
+	background: #320911;
 	text-align: center;
 	border: 1px solid #B0C4DE;
 	border-bottom: none;
@@ -33,7 +52,7 @@ form, .content {
 	margin: 50px auto 0px;
 	margin-top: 130px;
 	color: white;
-	background: #5E1717;
+	background: #320911;
 	text-align: center;
 	border: 1px solid #B0C4DE;
 	border-bottom: none;
@@ -77,12 +96,16 @@ form, .content2 {
 	border-radius: 5px;
 	border: 1px solid gray;
 }
+#user{
+	font-family: 'Crimson Text', serif;
+}
 #user_type {
 	height: 40px;
 	width: 98%;
 	padding: 5px 10px;
 	background: white;
 	font-size: 16px;
+	font-family: 'Crimson Text', serif;
 	border-radius: 5px;
 	border: 1px solid gray;
 }
@@ -131,7 +154,7 @@ form, .content2 {
 		background: #003366;
 	}
 	button[name=register_btn] {
-		background: #003366 !important;
+		background: #320911 !important;
 	}
 
    #content{
@@ -201,9 +224,10 @@ tr:hover {
     padding: 10px;
     font-size: 15px;
     color: white;
-    background: #5F9EA0;
+    background: #320911;
     border: none;
     border-radius: 5px;
+
 }
 .edit_btn {
     text-decoration: none;
@@ -221,3 +245,85 @@ tr:hover {
     background: #800000;
 }
 /*comment*/
+.card{
+	max-width: 70%;
+	margin-left: 18%;
+	margin-bottom:20px;
+	margin-top: 20px;
+	position: absolute;
+}
+.card-body{
+	font-family: 'Crimson Text', serif;
+}
+#footlogo{
+	margin-top: 30px !important;
+}
+
+/*Footer*/
+a:hover{
+	color: #DAA520 !important;
+}
+i {
+	color: white;
+}
+
+#foot{
+	margin-top: 60px;
+	width:50px;
+	color: #e1c699;
+}
+#footlogo{
+	margin-top: 10px;
+}
+#foot:hover{
+	color: #DAA520 !important;
+}
+#a2{
+	margin-top: 75px;
+}
+#a2:hover{
+	color: #DAA520 !important;
+}
+btn-dark{
+	height: 350px;
+
+}
+#media{
+	margin-top: 8px;
+	margin-left: 5px;
+	padding-left: 30px;
+}
+.jumbotron{
+	background-color: black !important;
+	margin-left: 30px;
+	padding-top: 2px;
+}
+#comments{
+	background-color: #320911  !important;
+	max-width: 70%;
+	margin-left: 18%;
+	margin-bottom:20px;
+	margin-top: 20px;
+	border-radius: 1%;
+}
+#display_comment{	
+	max-width: 70%;
+	margin-left: 5%;
+	border-radius: 1%;
+}
+#comment_form{
+	border:1px solid black;
+	margin-top: 5%;
+	border-radius: 1%;
+	margin-right: 32%;
+}
+
+
+
+
+
+
+
+
+	
+

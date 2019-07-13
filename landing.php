@@ -2,29 +2,42 @@
 <?php include('header.php'); ?>
 <body>
 <!-- nav -->
-<div id="navi" class="row">  
-	<ul class="nav justify-content-start">
+<div id="navi">
+	<div class="row">
+		<ul class="nav">
+		<a id="navlogo" href="landing.php"><img src="img/Logo.png" height="80px" width="100px"></a>
+		</ul>
+		<ul class="nav">
 	  <li id="media" class="nav-item">
-	    <a href="index.php">Recipes</a>
+	    <a href="index.php"><h5>Recipes</h5></a>
 	  </li>
 	  <li id="media" class="nav-item">
-	    <a href="">About Us</a>
+	    <a href=""><h5>About Us</h5></a>
 	  </li>
 	  <li id="media" class="nav-item">
-	   <a href="login.php">Sign In</a>
+	   <a href="login.php"><h5>Sign In</h5></a>
 	  </li>
-	</ul>
+	</ul>	
+	</div>
 </div>
 <!-- end of nav -->
-<div class="parallax"></div>
-<div>
-	<div class="row">
-		<div id="jumbo2" class="jumbotron jumbotron-fluid col-lg-12 col-md-12 mt-1 mb-1">
-		  <div class="container">
-		    <p class="lead"><h2>We made this blog to share some good steak and grilled recipes that you can enjoy with your family and loved ones.These recipes are easy to make and will surely satisfy your cravings for grilled dishes.</h2></p>
-		  </div>
-		</div>
-	</div>			
+<div class="container">
+	<img id="headlogo" src="img/Logo.png">
 </div>
+
+<div class="parallax"></div>
+<!-- About Us -->
+<div class="jumbotron jumbotron-fluid mt-0">
+  <div class="container">
+    <h2 class="display-4">About Us</h2>
+    <h6 class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</h6>
+  </div>
+</div>
+	 
+<!-- end of About Us -->
+
 <div class="parallax2"></div>
-<?php include('footer.php'); ?>
+
+<div class="jumbotron jumbotron-fluid col-lg-12 ml-0 mb-0 mt-5">
+	  <?php include('footer.php'); ?>
+</div>
