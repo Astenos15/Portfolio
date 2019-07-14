@@ -1,65 +1,45 @@
-<?php 
-	include('functions.php');
-	include('db.php');
-	include('header2.php');
 
-	if (!isLoggedIn()) {
-	$_SESSION['msg'] = "You must log in first";
-	header('location: login.php');
-    }
-?>
-
+<?php include('header.php'); ?>
 <body>
-<!-- Recipe -->
-	<?php $results = mysqli_query($db, "SELECT * FROM images"); ?>
-	<div class="container justify-content-center" >
-		<?php
-	    while ($row = mysqli_fetch_array($result)) {
-		echo "<div class='card'>";
-		 echo "<img src='admin/images/".$row['image']. "' >";
-		  echo "<button  class='btn btn-primary' type='button' data-toggle='collapse' data-target='#collapseExample' aria-expanded='false' aria-controls='collapseExample'>
-		    Learn More
-		  </button>";
-		  echo "<div class='collapse' id='collapseExample'>";
-		  echo "<div class='card card-body'>";
-		    echo "<p1>".$row['image_text']."</p1>";
-		 echo "</div>";
-		 echo "</div>";
-		echo "</div>";
-	     } 
-		 ?>	  
-   </div>
- <!-- Recipe -->
-    
- <!-- comment -->
-  <div id="comments">
-  	<?php include('comment.php') ?>
-  </div>
- <!-- comment -->
-
-   <!-- footer -->
-   <div class="jumbotron jumbotron-fluid col-lg-12 ml-0 mb-0 mt-0">
-	  <footer id="footer">
-		<ul class="nav justify-content-center">
+<!-- nav -->
+<div id="navi">
+	<div class="row">
 		<ul class="nav">
-			<a href="landing.php"><img id="footlogo" src="img/Logo.png" height="150px" width="150px"></a>
-			</ul>
-		  <li id="media" class="nav-item">
-		    <a href=""><i id="foot" class="fab fa-instagram fa-2x"></i></a>
-		  </li>
-		  <li id="media" class="nav-item">
-		    <a href=""><i id="foot" class="fab fa-facebook-square fa-2x"></i></a>
-		  </li>
-		  <li id="media" class="nav-item">
-		   <a href=""> <i id="foot" class="fab fa-twitter fa-2x"></i></a>
-		  </li>
-		  <li id="logo" class="nav-item">
-		    <a><h5 id="a2">Copyright Fian Steaks Treat</h5></a>
-		  </li>
+		<a id="navlogo" href="landing.php"><img src="img/Logo.png" height="80px" width="100px"></a>
 		</ul>
-		</footer>
-   </div>	
-  	<!-- footer --> 
+		<ul class="nav">
+	  <li id="media" class="nav-item">
+	    <a href="landing.php"><h5>Recipes</h5></a>
+	  </li>
+	  <li id="media" class="nav-item">
+	    <a href=""><h5>About Us</h5></a>
+	  </li>
+	  <li id="media" class="nav-item">
+	   <a href="login.php"><h5>Sign In</h5></a>
+	  </li>
+	</ul>	
+	</div>
+</div>
+<!-- end of nav -->
+<div class="container">
+	<img id="headlogo" src="img/Logo.png">
+</div>
+
+<div class="parallax"></div>
+<!-- About Us -->
+<div id="jumbotron" class="jumbotron jumbotron-fluid mt-0">
  
-</body>
-</html>
+    <h1 class="display-4">About Us</h1>
+    <h5 class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</h5>
+
+</div>	 
+<!-- end of About Us -->
+
+
+	
+<div class="parallax2"></div>
+
+
+<div id="jumbotron" class="jumbotron jumbotron-fluid col-lg-12 ml-0 mb-0 mt-5">
+	  <?php include('footer.php'); ?>
+</div>

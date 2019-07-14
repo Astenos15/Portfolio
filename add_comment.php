@@ -2,7 +2,7 @@
 
 //add_comment.php
 
-$connect = new PDO('mysql:host=localhost;dbname=testing', 'root', '');
+$connect = new PDO('mysql:host=localhost;dbname=multi_login', 'root', '');
 
 $error = '';
 $comment_name = '';

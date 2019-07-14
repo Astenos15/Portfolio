@@ -1,8 +1,8 @@
 <?php
-
+include ('header.php');
 //fetch_comment.php
 
-$connect = new PDO('mysql:host=localhost;dbname=testing', 'root', '');
+$connect = new PDO('mysql:host=localhost;dbname=multi_login', 'root', '');
 
 $query = "
 SELECT * FROM tbl_comment 

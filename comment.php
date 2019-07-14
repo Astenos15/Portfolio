@@ -1,14 +1,15 @@
 <?php
 //index.php
+if (!isLoggedIn()) {
+  $_SESSION['msg'] = "You must log in first";
+  header('location: login.php');
+    }
 
 ?>
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Comment System using PHP and Ajax</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
  </head>
  <body>
   

@@ -63,7 +63,7 @@ function register(){
 
 			$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
 			$_SESSION['success']  = "You are now logged in";
-			header('location: index.php');				
+			header('location: landing.php');				
 		}
 	}
 }
@@ -190,7 +190,7 @@ function isAdmin()
 
   	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
   		// $msg = "Image uploaded successfully";
-      header("location: ../index.php");
+      header("location: ../landing.php");
   	}else{
   		$msg = "Failed to upload image";
   	}
